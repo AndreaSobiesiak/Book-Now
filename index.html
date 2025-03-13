@@ -4,28 +4,12 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter|Raleway">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Book Now - Paws & Play</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             background-color: #f7ffff;
-        }
-        .horizontal-line {
-            width: 100%; 
-            height: 2px; 
-            background-color: #3c55a5; 
-            margin-top: 65px; 
-            margin-bottom: 65px;
-        }
-        p {
-            text-align: center;
-            color: #3c55a5;
-            font-family: "Inter", sans-serif;
-            margin-top: 10px;
-            padding-left: 200px; 
-          padding-right: 200px; 
-            font-size: 15pt;
         }
         nav {
             background-color: #ffe8ff;
@@ -46,116 +30,73 @@
         nav a:hover {
             text-decoration: underline;
         }
-        .content {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: calc(100vh - 100px); 
-            flex-direction: column; 
-      }
-        img {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 5px; 
+        .container {
+            max-width: 800px;
+            margin: 100px auto; /* Add margin to push down from the navbar */
+            padding: 20px;
+            background-color: #ffe8ff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         }
-        .left-paragraph {
-            text-align: left; 
-            margin-top: 40px;
-          margin-bottom: 80px; 
-          padding-bottom: 40px;
-            padding-right: 200px;
-          padding-top: 50px;
-            background-color: #ffe8ff; 
-            display: flex;
-            justify-content: center; 
-            align-items: flex-start; 
-            max-width: 100%; 
-        }
-        .text-content {
-            max-width: 100%; 
-            margin-right: 0px; 
-        }
-        .sunny-image {
-            width: 1500px; 
-            height: auto;
-        }
-      .golden-image {
-            width: 1500px; 
-            height: auto;
-        }
-      .button-container {
-            position: relative;
+        h1 {
             text-align: center;
-            margin-bottom: 10pt; 
-        padding-bottom: 1000;
-            background-image: url('dogs.jpg'); 
-            background-size: 1000pt; /* Cover the entire container */
-            
+            color: #3c55a5;
         }
-      
-      .book-now-button {
-    display: inline-block;
-    background-image: url('puppy.jpeg');
-    background-color: white; 
-    color: #ffe8ff; 
-    padding: 30px 100px; 
-        font-family: "Inter", sans-serif;
-    text-align: center;
-    text-decoration: none; 
-    font-size: 25pt; 
-    margin-left: 50%;
-        margin-bottom: 50pt; 
-    border-radius: 5px; 
-    transition: background-color 0.5s; 
-    border: 2px solid #3c55a5;
-        
-}
-
-.book-now-button:hover {
-    background-color: #2b417c; 
-    border-color: #2b417c; 
-}
-      
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        label {
+            font-weight: bold;
+            color: #3c55a5;
+        }
+        input, select, textarea {
+            padding: 10px;
+            border: 2px solid #3c55a5;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        input[type="submit"] {
+            background-color: #3c55a5;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        input[type="submit"]:hover {
+            background-color: #2b417c;
+        }
     </style>
 </head>
 <body>
     <nav>
-        <a href="#Home">Home</a>
+        <a href="index.html">Home</a>
         <a href="#About Us">About Us</a>
         <a href="#Look Book">Look Book</a>
-        <a href="#Book Now">Book Now</a>
+        <a href="book-now.html">Book Now</a>
     </nav>
-    <div class="content" id="home">
-        <img src="TitleCard.jpg" alt="Paw's & Play title with dogs running in a field in the background">
-    </div> 
-    <p>Get ready to pamper your fur baby with the ultimate playtime getaway! Say goodbye to boring indoor days and watch your pup’s tail wag with excitement here at Paws &amp Play! When the weather is nice, we offer just under half an acre of space for your pup to run, explore, and have a blast. Our yard is securely enclosed with 6-ft fencing, and playtime is always supervised. On indoor days, we have a spacious area filled with plenty of toys for dogs to socialize and have fun. Book now and treat your furry friend to a day full of tail-wagging fun!</p>
-    <div class="horizontal-line"></div>
-    <div class="left-paragraph">
-        <div class="text-content">
-            <p>Paws &amp Play is a farmhouse that has been renovated specifically for the dogs. We have 6 different cage-free lounges that we use to separate dogs based on size, energy, and/or temperament.</p>
-          <br>
-          <br> 
-            <p>Each lounge is equipped with couches, dog beds, blankets, chew toys, food, and water, all customized to your dog’s needs. The rooms have been cleared out and made dog-friendly, including furniture, TVs, and music. </p>
-          
-           <br>
-          <br>
-            <p>We aim to create an in-home environment for the dogs staying with us. We also prioritize plenty of outdoor activity, so your pup will get lots of exercise and have the chance to make new furry friends. </p>
-        </div>
-      <div>
-        
-        <img class="sunny-image" src="sunnyPic.jpg" alt="Cocker spaniel puppy outside">
-      <br>
+    <div class="container">
+        <h1>Book Your Spot!</h1>
       <img class="golden-image" src="goldenPuppy.webp" alt="golden puppy playing with and chewing a toy on a couch">
+        <form action="submit-booking.php" method="POST"> <!-- Change action to your server-side processing script -->
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="date">Preferred Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Preferred Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="message">Additional Information:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+
+            <input type="submit" value="Submit Booking">
+        </form>
     </div>
-      </div> 
-  
-   <div class="button-container">
-    <div class="button-container">
-    <a href="book-now.html" class="book-now-button">Book Now</a>
-</div>
-  </div>
-  
-  <img src="footer3.jpg" alt="footer with phone number, address, socials, and phone number">
- 
 </body>
 </html>
