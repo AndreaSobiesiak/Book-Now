@@ -4,10 +4,16 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter|Raleway">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Now - Paws & Play</title>
+    <title>Book Now - Paws &amp Play</title>
     <style>
+      img {
+        margin-top: 10pt;
+            max-width: 100%;
+            height: auto;
+        box-align: center; 
+        }
         body {
-            font-family: Arial, sans-serif;
+            
             margin: 0;
             background-color: #f7ffff;
         }
@@ -32,16 +38,46 @@
         }
         .container {
             max-width: 800px;
-            margin: 100px auto; /* Add margin to push down from the navbar */
+          box-align: center; 
+            margin: 100px auto; 
             padding: 20px;
             background-color: #ffe8ff;
             border-radius: 10px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-        }
+          font-family: "Inter", sans-serif;
+      } .title {
+        max-width: 90%;
+        box-align: center; 
+        padding-top: 80pt; 
+        padding-bottom: 0pt;
+      }
         h1 {
             text-align: center;
+          font-family: "Inter", sans-serif;
             color: #3c55a5;
         }
+      
+      h2 {
+            text-align: center;
+        font-family: "Inter", sans-serif;
+            color: #3c55a5;
+        font-size: 15pt; 
+        }
+      
+      h3 {
+            text-align: center;
+        font-family: "Inter", sans-serif;
+            color: #3c55a5;
+        font-size: 15pt; 
+        }
+      
+      p {
+            text-align: center;
+        font-family: "Inter", sans-serif;
+            color: #3c55a5;
+        font-size: 15pt; 
+        }
+      
         form {
             display: flex;
             flex-direction: column;
@@ -70,33 +106,94 @@
     </style>
 </head>
 <body>
+  
+  
     <nav>
         <a href="index.html">Home</a>
         <a href="#About Us">About Us</a>
         <a href="#Look Book">Look Book</a>
         <a href="book-now.html">Book Now</a>
     </nav>
-    <div class="container">
-        <h1>Book Your Spot!</h1>
-      <img class="golden-image" src="goldenPuppy.webp" alt="golden puppy playing with and chewing a toy on a couch">
-        <form action="submit-booking.php" method="POST"> <!-- Change action to your server-side processing script -->
-            <label for="name">Your Name:</label>
+  
+  
+    <div class="title">
+      <img src="top_title-removebg-preview.png" alt="Title Card Paws & Play">
+      <h1>
+         Request an appointment
+      </h1>
+      
+      <h2>
+         Appointments are not guaranteed until confirmed.
+      </h2>
+  </div>
+      
+  <div class="container">
+      
+        <form action="submit-booking.php" method="POST"> 
+          
+            <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
 
-            <label for="email">Your Email:</label>
+            <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
+          
+          <label for="phone"> Phone:</label>
+            <input type="phone" id="phone" name="phone" required>
 
             <label for="date">Preferred Date:</label>
             <input type="date" id="date" name="date" required>
+          
+          <label for="date">Until: (Optional) </label>
+            <input type="date" id="end date" name="date">
 
             <label for="time">Preferred Time:</label>
             <input type="time" id="time" name="time" required>
+          
+          <label for="time">Until:</label>
+            <input type="time" id=" end time" name="time" required>
 
             <label for="message">Additional Information:</label>
             <textarea id="message" name="message" rows="4"></textarea>
 
-            <input type="submit" value="Submit Booking">
+            <input type="submit" value="Submit">
         </form>
     </div>
+  
+  <h1>
+    Contact Us
+  </h1>
+  <h2>
+    Have a question? Contact us, we answer! 
+  </h2>
+  
+  <div class="container">
+      
+        <h3>
+          Phone:
+          
+    </h3>
+         <p>    
+          905 -726- 9900 
+    </p>
+          <h3>
+          Email:
+            </h3>
+       
+            <p>
+          pawsandplay@gmail.com 
+              </p>
+      
+              <h3>
+          Socials:   
+     
+                </h3>
+          <p> @PawsAndPlayKing 
+    </p>
+    
+    </div>
+  
+  <img src="footer3.jpg" alt="Title Card Paws & Play">
+  
+
 </body>
 </html>
