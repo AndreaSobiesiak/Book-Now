@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter|Raleway">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter|Pacifico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Now - Paws &amp Play</title>
@@ -18,7 +18,7 @@
             background-color: #f7ffff;
         }
         nav {
-            background-color: #ffe8ff;
+            background-color: #ffeefa ;
             font-family: "Inter", sans-serif;
             padding: 10px;
             text-align: center;
@@ -41,7 +41,7 @@
           box-align: center; 
             margin: 100px auto; 
             padding: 20px;
-            background-color: #ffe8ff;
+            background-color: #ffeefa  ;
             border-radius: 10px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
           font-family: "Inter", sans-serif;
@@ -53,20 +53,22 @@
       }
         h1 {
             text-align: center;
-          font-family: "Inter", sans-serif;
+          font-family: "Pacifico", sans-serif;
             color: #3c55a5;
+          font-size: 30pt;
         }
       
       h2 {
             text-align: center;
         font-family: "Inter", sans-serif;
             color: #3c55a5;
-        font-size: 15pt; 
+        font-size: 18pt; 
+        text-wrap: 3pt; 
         }
       
       h3 {
             text-align: center;
-        font-family: "Inter", sans-serif;
+        font-family: "Pacifico", sans-serif;
             color: #3c55a5;
         font-size: 15pt; 
         }
@@ -92,6 +94,7 @@
             border: 2px solid #3c55a5;
             border-radius: 5px;
             font-size: 16px;
+          font-family: "Inter", sans-serif;
         }
         input[type="submit"] {
             background-color: #3c55a5;
@@ -99,6 +102,7 @@
             border: none;
             cursor: pointer;
             transition: background-color 0.3s;
+          font-family: "Inter", sans-serif;
         }
         input[type="submit"]:hover {
             background-color: #2b417c;
@@ -114,20 +118,18 @@
         <a href="#Look Book">Look Book</a>
         <a href="book-now.html">Book Now</a>
     </nav>
-  
-  
-    <div class="title">
-      <img src="top_title-removebg-preview.png" alt="Title Card Paws & Play">
-      <h1>
-         Request an appointment
-      </h1>
-      
-      <h2>
-         Appointments are not guaranteed until confirmed.
-      </h2>
-  </div>
       
   <div class="container">
+    
+    <h1>
+         Request an appointment
+      </h1>
+    
+    <h2>
+         Appointments are not guaranteed until confirmed.
+      </h2>
+    
+    <br> 
       
         <form action="submit-booking.php" method="POST"> 
           
@@ -156,18 +158,23 @@
             <textarea id="message" name="message" rows="4"></textarea>
 
             <input type="submit" value="Submit">
+          <br>
         </form>
     </div>
   
-  <h1>
+  
+  
+  <div class="container">
+      
+    <h1>
     Contact Us
   </h1>
   <h2>
     Have a question? Contact us, we answer! 
   </h2>
-  
-  <div class="container">
-      
+    
+    <br> 
+    
         <h3>
           Phone:
           
@@ -180,7 +187,7 @@
             </h3>
        
             <p>
-          pawsandplay@gmail.com 
+          <a href="mailto:pawsandplay@gmail.com" style="color: #3c55a5; text-decoration: none;">pawsandplay@gmail.com</a> 
               </p>
       
               <h3>
@@ -189,6 +196,7 @@
                 </h3>
           <p> @PawsAndPlayKing 
     </p>
+    <br> 
     
     </div>
   
