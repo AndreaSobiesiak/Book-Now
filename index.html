@@ -10,7 +10,7 @@
         margin-top: 10pt;
             max-width: 100%;
             height: auto;
-        box-align: center; 
+      
         }
         body {
             
@@ -38,7 +38,6 @@
         }
         .container {
             max-width: 800px;
-          box-align: center; 
             margin: 100px auto; 
             padding: 20px;
             background-color: #ffeefa  ;
@@ -121,16 +120,29 @@
         input[type="submit"]:hover {
             background-color: #2b417c;
         }
+      .pictures {
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    background-image: url(picturecard.jpg);
+    background-size: cover;   
+    background-position: center;
+    width: 100%;              
+    height: 400px;            
+    margin: 0 auto; 
+        margin-bottom: 50pt; 
+         
+}
     </style>
 </head>
 <body>
   
   
     <nav>
-        <a href="index.html">Home</a>
-        <a href="#About Us">About Us</a>
-        <a href="#Look Book">Look Book</a>
-        <a href="book-now.html">Book Now</a>
+        <a href="https://netnet.studio/?gh=AndreaSobiesiak/Practice">Home</a>
+        <a href="https://netnet.studio/?gh=AndreaSobiesiak/About-Us">Services</a>
+        <a href="https://netnet.studio/?gh=AndreaSobiesiak/Practice">Look Book</a>
+        <a href="https://netnet.studio/?gh=AndreaSobiesiak/Book-Now">Book Now</a> 
     </nav>
       
   <div class="title">
@@ -166,13 +178,13 @@
             <label for="date">Preferred Date:</label>
             <input type="date" id="date" name="date" required>
           
-          <label for="date">Until: (Optional) </label>
+          <label for="end date">Until: (Optional) </label>
             <input type="date" id="end date" name="date">
 
             <label for="time">Preferred Time:</label>
             <input type="time" id="time" name="time" required>
           
-          <label for="time">Until:</label>
+          <label for="end time">Until:</label>
             <input type="time" id=" end time" name="time" required>
 
             <label for="message">Additional Information:</label>
@@ -183,16 +195,24 @@
         </form>
     </div>
   
-  
-  
-  <div class="container">
-      
+  <div class="pictures">
     <h1>
+       We can't wait <br> to see you!
+    </h1>
+  </div>
+  
+  <h1>
     Contact Us
   </h1>
   <h2>
     Have a question? Contact us, we answer! 
   </h2>
+  
+  <div class="horizontal-line"></div>
+  
+  <div class="container">
+      
+    
     
     <br> 
     
@@ -253,7 +273,7 @@
     
     </div>
   
-  <img src="footer3.jpg" alt="Title Card Paws & Play">
+  <img src="footer3.jpg" alt="Footer with phone number, address, socials, and email">
   
 
 </body>
